@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rabix</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
+
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            background-color: #1D1F21;
+        }
+        section {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        div {
+            text-align: center;
+        }
+
+        h1, h2 {
+            font-family: 'Cutive Mono', monospace;
+        }
+        h1 {
+            font-size: 3em;
+            line-height: 1;
+            color: #DE935F;
+            margin-top: 0;
+        }
+        h2 {
+            color: #F0C674;
+        }
+        span {
+            color: #C5C8C6;
+        }
+        .i-cursor-underscore {
+            width: 10px;
+            height: 2px;
+            background-color: #C5C8C6;
+            display: inline-block;
+            margin-left: 3px;
+            margin-bottom: -2px;
+            -webkit-animation: blink 1s steps(2, start) infinite;
+            animation: blink 1s steps(2, start) infinite;
+        }
+        @-webkit-keyframes blink {
+            to {
+                visibility: hidden;
+            }
+        }
+        @keyframes blink {
+            to {
+                visibility: hidden;
+            }
+        }
+    </style>
+</head>
+<body>
+<section>
+    <div>
+        <h1>Hello World</h1>
+        <h2><span>></span> 'Coming Soon'<span class="i-cursor-underscore"></span></h2>
+    </div>
+</section>
+</body>
+</html>
