@@ -1,77 +1,337 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Rabix</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-    <style>
-        html, body {
-            margin: 0;
-            padding: 0;
-            background-color: #1D1F21;
-        }
-        section {
-            display: -webkit-box;
-            display: -webkit-flex;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            -webkit-align-items: center;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-        }
+    <title>Rabix - Reproducible Analysis for Bioinformatics</title>
 
-        div {
-            text-align: center;
-        }
+    <meta name="description" content="Rabix is an open-source development project for creating and running computational workflows.">
+    <meta name="robots" content="noodp">
+    <link rel="canonical" href="https://www.rabix.io">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Rabix - Reproducible Analysis for Bioinformatics">
+    <meta property="og:description" content="Rabix is an open-source development project for creating and running computational workflows.">
+    <meta property="og:url" content="https://www.rabix.io">
+    <meta property="og:site_name" content="Rabix - Reproducible Analysis for Bioinformatics">
+    <meta property="og:image" content="images/facebook-Linked_Image___rabix_social.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:description" content="Rabix is an open-source development project for creating and running computational workflows.">
+    <meta name="twitter:title" content="Rabix - Reproducible Analysis for Bioinformatics">
+    <meta name="twitter:image" content="images/twitter-In-Stream_Wide___rabix_social.png">
 
-        h1, h2 {
-            font-family: 'Cutive Mono', monospace;
-        }
-        h1 {
-            font-size: 3em;
-            line-height: 1;
-            color: #DE935F;
-            margin-top: 0;
-        }
-        h2 {
-            color: #F0C674;
-        }
-        span {
-            color: #C5C8C6;
-        }
-        .i-cursor-underscore {
-            width: 10px;
-            height: 2px;
-            background-color: #C5C8C6;
-            display: inline-block;
-            margin-left: 3px;
-            margin-bottom: -2px;
-            -webkit-animation: blink 1s steps(2, start) infinite;
-            animation: blink 1s steps(2, start) infinite;
-        }
-        @-webkit-keyframes blink {
-            to {
-                visibility: hidden;
-            }
-        }
-        @keyframes blink {
-            to {
-                visibility: hidden;
-            }
-        }
-    </style>
+    <!-- Base CSS -->
+    <link href="css/base.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="css/etline-font.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
+
 <body>
-<section>
-    <div>
-        <h1>Hello World</h1>
-        <h2><span>></span> 'Coming Soon'<span class="i-cursor-underscore"></span></h2>
+
+<!-- Navigation -->
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <a class="navbar-brand" href="">Rabix</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#cwl">Getting Started</a>
+                </li>
+                <li>
+                    <a href="#mission">Mission</a>
+                </li>
+                <li>
+                    <a href="#faq">FAQs</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+
+    </div>
+    <!-- /.container -->
+</nav>
+
+<!-- Hero Section -->
+<header class="hero-strip">
+    <div class="container">
+        <div class="raw">
+            <div class="col-md-12 text-center">
+                <h1>Rabix</h1>
+                <p>[Reproducible Analysis for Bioinformatics]</p>
+                <!--Terminal-->
+                <div class="terminal-window">
+                    <header>
+                        <div class="button green"></div>
+                        <div class="button yellow"></div>
+                        <div class="button red"></div>
+                    </header>
+                    <section class="terminal">
+                        <div class="history"></div>
+                        $&nbsp;<span class="prompt"></span>
+                        <span class="typed-cursor"></span>
+
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Section Rabix -->
+<section id="rabix" class="section-b">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <h2>What is Rabix?</h2>
+                <p>Rabix is an open-source development project for creating and running computational workflows. It was
+                    founded by <a href="https://www.sevenbridges.com" target="_blank">Seven Bridges</a> with the goal of
+                    empowering researchers and developers to easily run reproducible analyses at scale.
+                </p>
+                <p>
+                    The Rabix project is currently supporting two efforts:
+                </p>
+                <div class="col-md-6">
+                    <h4>The Rabix Executor (Project Bunny)</h4>
+                    <img src="images/executor.svg" alt="">
+                    <p>
+                        The Rabix Executor supports the <a href="http://www.commonwl.org/" target="_blank">Common
+                        Workflow
+                        Language</a>
+                        (CWL) and is currently runnable from the command line. It is suitable for local testing and
+                        development. Rabix also supports the Global
+                        <a href="http://genomicsandhealth.org/" target="_blank">Alliance for Genomics Health</a> (GA4GH)
+                        <a href="https://github.com/ga4gh/task-execution-server" target="_blank">Task Execution
+                            Server</a> (TES) as a way to scale to cloud environments.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <h4>The Rabix Composer (Project Cottontail)</h4>
+                    <img src="images/cottontail.svg" alt="">
+                    <p>
+                        The Rabix Composer is a standalone integrated development environment for workflow description
+                        languages that enables rapid workflow composition, testing, and integration with online
+                        services like DockerHub. A
+                        beta release is expected in the first half of 2017.
+                    </p>
+                </div>
+
+            </div>
+        </div>
     </div>
 </section>
+
+<!-- Section captions -->
+<section id="intro" class="section-a intro">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="intro-icon">
+                    <span data-icon="&#xe051;" class="icon"></span>
+                </div>
+                <div class="intro-content">
+                    <h4>Speed</h4>
+                    <p>Rabix tools are designed to be easy to install and run. Start using tools and workflows described in CWL at scale in minutes.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="intro-icon">
+                    <span data-icon="&#xe031;" class="icon"></span>
+                </div>
+                <div class="intro-content">
+                    <h4>Reproducibility</h4>
+                    <p>The Rabix Executor gives you full control over how to run workflows, including management of
+                        intermediate results, parallelization, and software containers.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="intro-icon">
+                    <span data-icon="&#xe01a;" class="icon"></span>
+                </div>
+                <div class="intro-content">
+                    <h4>Flexibility</h4>
+                    <p>The primary goal of Rabix is to further reproducibility. With Rabix tools, you can leverage our version control tools, task
+                        and error logs, and have the ability to restart and reuse tools and workflows. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Section get strated -->
+<section id="cwl" class="section-b">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <h2>Getting Started</h2>
+                <p>
+                    Full instructions on how to download and install the Rabix Executor (Mac OSX/Linux) can be found on
+                    <a href="https://github.com/rabix/bunny">GitHub</a>. These include example tools and workflows to
+                    demonstrate how to use CWL.
+                </p>
+                <p>
+                    More example CWL tools and workflows can be found on the public <a
+                        href="https://github.com/common-workflow-language/workflows">GitHub</a> repo.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Section mission -->
+<section id="mission" class="section-b">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <h2>Our mission</h2>
+                <p>
+                    Computational reproducibility is incredibly challenging. Complicated software dependencies, poor
+                    documentation/communication, and human error leads to a great deal of disharmony and can impede
+                    scientific progress.
+                </p>
+                <div class="col-md-6">
+                    <img src="images/containers.svg" alt="">
+                </div>
+                <p class="col-md-6">
+                    In recent years, a technology which makes it easier to share software and run everywhere in exactly
+                    the same way has become increasingly popular - <b>software containers</b>. Containers allow
+                    developers to package software into a discrete environment with its own virtual file system and
+                    dependencies. This means that whole teams can operate in a “single environment”, which minimizes
+                    errors when sharing and testing code, making it easier to scale. Recent technologies such as Docker (est. 2013) have automated
+                    the process of creating and sharing software containers, spurring much broader adoption and lowering
+                    the technical barrier to entry.
+                </p>
+                <p class="col-md-6">
+                    However, a major hurdle to reproducible software deployment persists - software containers may
+                    contain all the “pieces” to perform an analysis (besides data), but not the instructions on how to
+                    use them. It’s like having a box of ingredients without a recipe - every chef makes a different
+                    dish. To help solve this issue, the concept of <b>workflow descriptions</b> has been applied to
+                    containers to further enhance reproducibility, simplify software sharing/publication, and reducing the
+                    activation energy needed to start using a new algorithm or verify a scientific finding.
+                </p>
+                <div class="col-md-6">
+                    <img src="images/workflow.svg" alt="">
+                </div>
+                <h3 class="col-md-12"><br>Simply put, our mission of the Rabix project is to further the reproducibility of biomedical computing.</h3>
+                <p class="col-md-12">
+                    This is why much of the Rabix team are proud to be founding members of the Common Workflow Language, a
+                    community-driven effort to create a standard specification for reproducible workflows. Created in
+                    2014, CWL is now widely- adopted among academic centers and industrial partners. The Rabix
+                    Executor is an open-source technology for implement Common Workflow Language to
+                    its fullest potential.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Section faqs -->
+<section id="faq" class="section-a">
+    <div class="container">
+        <div class="raw">
+            <div class="col-md-10 col-md-offset-1">
+                <h2>FAQs</h2>
+                <h3>Which open-source licenses are used?</h3>
+                <p>Currently, all Rabix projects use the Apache 2.0 license.</p>
+                <h3> Why is it called Rabix?</h3>
+                <p>Rabix is a portmanteau of Reproducible Analyses for Bioinformatics. It contains, in brief, our
+                    guiding mission statement. ‘Rabix’ has the added benefit of sounding like “rabbits,” a species
+                    known
+                    for its speed, flexibility and, um, reproducibility.</p>
+                <h3>How do I cite Rabix?</h3>
+                <p>We have a publication outlining the feature set within the Rabix Executor, including how we enable
+                    persistence, tracking of jobs, job groups, memoization, parallelization, and scaling. It is
+                    available on <a href="https://www.ncbi.nlm.nih.gov/pubmed/27896971">PubMed</a> and <a
+                            href="http://biorxiv.org/content/early/2016/10/23/074708">bioRxiv</a>.</p>
+                <h3>Who are we?</h3>
+                <p>The Rabix project was founded by <a href="https://www.sevenbridges.com" target="_blank">Seven
+                    Bridges</a> in 2015. The team includes Nebojsa Tijanić (a co-author of the Common Workflow
+                    Language), Janko Simonović, Luka Stojanović, Siniša Ivković, Maja Nedeljković, Adrian Sharma and Gaurav Kaushik.
+                    We are proud to have collaborators involved in the Global Alliance for Genomic Health (GA4GH) and
+                    academic and non-profit institutions</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="section-gray">
+    <div class="container">
+        <div class="raw">
+            <div class="col-md-12 text-center">
+                <div class="intro-icon">
+                    <span data-icon="&#xe049;" class="icon"></span>
+                </div>
+            </div>
+            <div class="col-md-12 text-center">
+                <h2>How can you contact us?</h2>
+                <p>The best way for developers to get in contact is through Gitter at <a
+                        href="https://gitter.im/rabix/bunny">Gitter</a>.
+                </p>
+                <p>
+                    For bug fixes or feature requests, please create a GitHub issue at <a
+                        href="https://github.com/rabix/bunny">https://github.com/rabix/bunny</a>.
+                </p>
+                <p>
+                    If you’re interested in joining the CWL community or learning how to leverage Rabix for your
+                    computing needs, you can reach us at <a href="mailto:rabix@sevenbridges.com">rabix@sevenbridges.com</a>
+                    (a more public forum is coming soon!).
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="footer-content">
+                    <p>Copyright © <span id="year"></span> <a href="#">Seven Bridges</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+<script src='https://www.mattboldt.com/demos/typed-js/js/typed.custom.js'></script>
+
+<!-- Custom JavaScript -->
+<script src="js/script.js"></script>
 </body>
+
 </html>

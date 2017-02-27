@@ -1,0 +1,196 @@
+/*!
+ * Start Bootstrap - Modern Business HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
+@import url(https://fonts.googleapis.com/css?family=Merriweather:400,300,400italic,300italic,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Nunito:400,300,700);
+
+/* Global Styles */
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+}
+
+/* Logo */
+
+.navbar-brand {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: -1px;
+}
+
+/* Background Animation */
+
+.hero-animation {
+    position: absolute;
+}
+
+/* Header Hero Section */
+
+.hero-strip {
+    padding: 80px 0 120px;
+}
+
+.hero-strip h1 {
+    color: #434A54;
+    margin-bottom: 40px;
+}
+
+.hero-strip p {
+    color: #434A54;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+/* Sections on Home Page */
+
+.section-a, .section-b {
+    padding: 120px 0;
+    position: relative;
+    border-top: 1px solid #E6E9ED;
+}
+
+.section-a {
+    background-color: #F3F4F8;
+}
+
+/* Section Intro on Home Page */
+
+.intro h4 {
+    font-size: 15px;
+    color: #3D4351;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.intro p {
+    font-size: 15px;
+    line-height: 29px;
+    color: rgba(28, 54, 83, 0.6);
+    padding-bottom: 20px;
+}
+
+.intro-icon {
+    display: inline-block;
+    vertical-align: top;
+    padding: 6px 0 0 0;
+    margin-right: 20px;
+    width: 40px;
+}
+
+.intro-content {
+    display: inline-block;
+    width: 80%;
+}
+
+.intro span.icon {
+    font-size: 40px;
+    color: #27AE60;
+    font-weight: bold;
+}
+
+/* Section Features Extra on Home Page */
+
+.features-extra h3 {
+    margin-bottom: 20px;
+    color: #3D4351;
+}
+
+.features-extra img {
+    height: 350px;
+    background-color: #ccc;
+    text-align: center;
+}
+
+/* Section Signup Contact on Home Page */
+
+.signup-contact h2 {
+    margin-bottom: 20px;
+    color: #3D4351;
+}
+
+/* Page Content */
+
+.page-content p {
+    color: #34495E;
+}
+
+.page-content ul li {
+    color: #34495E;
+}
+
+/* Footer Styles */
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+    border-top: 1px solid #E6E9ED;
+}
+
+.footer-content {
+    padding: 20px 0 0;
+}
+
+.footer-links {
+    float: right;
+    padding: 40px 0 0;
+}
+
+.footer-links ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 5px;
+    text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        text-align: center;
+    }
+
+    .footer-links {
+        float: none;
+        text-align: center;
+        padding: 0 0 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    .footer-content {
+        text-align: center;
+    }
+
+    .footer-links {
+        float: none;
+        text-align: center;
+        padding: 0 0 20px;
+    }
+}
+
+@media (min-width: 992px) {
+    .footer-content {
+        padding: 20px 0 0;
+    }
+
+    .footer-links {
+        float: right;
+        padding: 40px 0 0;
+    }
+
+    .footer-links ul li {
+        display: inline-block;
+        list-style: none;
+        margin: 0 5px;
+        text-transform: uppercase;
+    }
+}
