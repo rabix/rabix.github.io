@@ -194,3 +194,64 @@ footer {
         text-transform: uppercase;
     }
 }
+
+/*Rabix Composer Page*/
+
+#composer .hero-strip {
+    padding-bottom: 120px;
+}
+
+#composer .hero-strip p {
+    margin-top: 24px;
+}
+
+#composer img {
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+#composer input, #composer textarea {
+    width: 100%;
+    max-width: 100%;
+    border: solid 2px rgba(113, 97, 202, 0.6);
+    padding: 8px;
+    /*box-shadow: 0 4px 4px rgba(50, 50, 93, .11), 0 1px 2px rgba(0, 0, 0, .08);*/
+
+    background-color: white;
+}
+
+#composer input:focus, #composer textarea:focus {
+    outline-color: rgba(113, 97, 202, 0.4);
+    outline-width: 4px;
+    box-shadow: none;
+}
+
+#composer input[type="submit"] {
+    margin-top: 24px;
+    transition: all .4s;
+    color: rgb(113, 97, 202);
+    font-weight: 400;
+}
+
+#composer input[type="submit"]:hover {
+    box-shadow: 0 6px 12px rgba(50, 50, 93, .11), 0 1px 4px rgba(0, 0, 0, .08);
+    transition: all .4s;
+    font-weight: normal;
+    font-size: 18px;
+    color: #666666;
+}
+
+#composer label {
+    margin-top: 24px;
+    font-size: 18px;
+}
+
+#composer .submitted-message {
+    background-color: white;
+    border: solid 2px rgba(113, 97, 202, 0.6);
+    box-shadow: 0 12px 24px rgba(50, 50, 93, .11), 0 1px 4px rgba(0, 0, 0, .08);
+    text-align: center;
+    padding: 24px;
+    font-size: 18px;
+    font-weight: 400;
+}
