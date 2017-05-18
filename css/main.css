@@ -201,9 +201,11 @@ footer {
     padding-bottom: 120px;
 }
 
-#composer .hero-strip h2 {
+#composer .hero-strip h3 {
     color: white;
     font-weight: 400;
+    padding-bottom: 0;
+    font-size: 40px;
 }
 
 #composer img {
