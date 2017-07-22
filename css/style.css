@@ -10,7 +10,7 @@ p {
 
 h1,
 h2,
-h3{
+h3 {
     margin: 0;
 }
 
@@ -22,16 +22,16 @@ h2 {
 
 h3 {
     font-weight: 600;
-    padding-bottom: 15px;
+    padding-bottom: 18px;
 }
 
 a {
-    text-decoration: none;
+    text-decoration: underline;
     color: #7161ca;
 }
 
 a:hover {
-    text-decoration: none;
+    /*text-decoration: none;*/
     color: #5348bc;
 }
 
@@ -56,15 +56,6 @@ img {
 
 /* Header */
 
-.navbar-brand {
-    color: white;
-    font-size: 24px;
-}
-
-.navbar-brand:hover {
-    color: rgba(255, 255, 255, .9);
-}
-
 .navbar {
     position: absolute;
     min-width: 100%;
@@ -79,8 +70,13 @@ img {
 }
 
 .nav > li > a:hover {
-    color: rgba(255,255,255,.8);
+    color: rgba(255, 255, 255, .8);
 }
+
+.navbar-default .navbar-nav > li > a {
+    text-decoration: none;
+}
+
 /* Hero section */
 
 .hero-strip {
@@ -218,8 +214,9 @@ img {
 /*Sections*/
 
 .intro {
-    background-image: linear-gradient(to bottom right,#062433,#1b4960,#447b84);
+    background-image: linear-gradient(to bottom right, #062433, #1b4960, #447b84);
 }
+
 .intro-icon {
     display: inline-block;
     vertical-align: top;
@@ -227,10 +224,12 @@ img {
     margin-right: 20px;
     width: 40px;
 }
+
 .intro span.icon {
     font-size: 40px;
     color: rgba(255, 255, 255, 0.8);
 }
+
 .intro h4 {
     font-size: 15px;
     color: #ffffff;
@@ -238,6 +237,7 @@ img {
     font-weight: 500;
     margin: 0 0 12px;
 }
+
 .intro p {
     font-size: 15px;
     line-height: 24px;
@@ -252,7 +252,7 @@ img {
 }
 
 #mission p {
-    color: rgba(255,255,255, .8);
+    color: rgba(255, 255, 255, .8);
 }
 
 #mission b {
@@ -264,6 +264,7 @@ img {
     padding: 60px 0 120px;
     border-top: 1px solid #E6E9ED;
 }
+
 .section-gray .intro-icon {
     width: 120px;
     height: 120px;
@@ -275,6 +276,7 @@ img {
     margin-top: -120px;
     border: solid 2px rgba(113, 97, 202, 0.6);
 }
+
 .section-gray span.icon {
     font-size: 60px;
     line-height: 120px;
@@ -308,32 +310,202 @@ footer p {
 
 #rabix img, #mission img {
     width: 100%;
-    padding: 10%;
+    margin-bottom: 18px;
+    box-shadow: 0 6px 6px rgba(50, 50, 93, .20), 0 1px 4px rgba(0, 0, 0, .10);
 }
 
-#rabix h4 {
-    text-transform: uppercase;
-    font-size: 16px;
-    font-weight: 600;
-    color: #000;
-    text-align: center;
-    margin-bottom: 0;
-    padding-bottom: 0;
+#rabix h3 a {
+    text-decoration: none;
 }
 
 /*--Mobile--*/
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 480px) {
     .terminal-window {
         width: 100%;
         height: 260px;
         overflow: visible;
     }
+
     .history {
         white-space: pre-wrap; /* css-3 */
         white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
         white-space: -pre-wrap; /* Opera 4-6 */
         white-space: -o-pre-wrap; /* Opera 7 */
         word-wrap: break-word; /* Internet Explorer 5.5+ */
+    }
+}
+
+/*--Launch Page--*/
+
+.launch-hero {
+    padding-bottom: 60px;
+}
+
+.launch-hero p {
+    line-height: 1.4;
+}
+
+#launch li {
+    font-weight: 400;
+}
+
+#rabix-composer {
+    padding-bottom: 60px;
+}
+#rabix-executor {
+    padding-top: 60px;
+}
+
+#rabix-composer h2, #rabix-executor h2 {
+    padding-bottom: 10px;
+}
+
+#rabix-composer ul {
+    list-style: none;
+    padding: 0;
+    font-size: 18px;
+}
+
+#rabix-composer ul li {
+    margin: 20px 0;
+}
+
+#launch video {
+    max-width: 100%;
+    box-shadow: 0 6px 6px rgba(50, 50, 93, .20), 0 1px 4px rgba(0, 0, 0, .10);
+    margin-bottom: 10px;
+}
+
+#launch img {
+    max-width: 100%;
+    box-shadow: 0 6px 6px rgba(50, 50, 93, .20), 0 1px 4px rgba(0, 0, 0, .10);
+    margin-bottom: 18px;
+}
+
+#rabix-executor ul {
+    padding-left: 20px;
+    font-size: 18px;
+}
+
+#launch input, #launch textarea {
+    width: 100%;
+    max-width: 100%;
+    border: solid 2px rgba(113, 97, 202, 0.6);
+    padding: 8px;
+    /*box-shadow: 0 4px 4px rgba(50, 50, 93, .11), 0 1px 2px rgba(0, 0, 0, .08);*/
+    background-color: white;
+}
+
+#launch input:focus, #composer textarea:focus {
+    outline-color: rgba(113, 97, 202, 0.4);
+    outline-width: 4px;
+    box-shadow: none;
+}
+
+#launch input[type="submit"] {
+    margin-top: 24px;
+    transition: all .4s;
+    color: white;
+    background: rgb(113, 97, 202);
+    font-weight: 400;
+    width: 40%;
+    float: right;
+    opacity: .9;
+}
+
+#launch input[type="submit"]:hover {
+    box-shadow: 0 6px 12px rgba(50, 50, 93, .11), 0 1px 4px rgba(0, 0, 0, .08);
+    opacity: 1;
+    transition: all .4s;
+}
+
+#launch label {
+    margin-top: 24px;
+    font-size: 18px;
+    font-weight: 400;
+    font-size: 18px;
+    color: #666666;
+}
+
+#launch .submitted-message {
+    background-color: white;
+    border: solid 2px rgba(113, 97, 202, 0.6);
+    box-shadow: 0 12px 24px rgba(50, 50, 93, .11), 0 1px 4px rgba(0, 0, 0, .08);
+    text-align: center;
+    padding: 24px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.download-links {
+    margin-top: 45px;
+}
+
+.download {
+    transition: all .4s;
+    color: white;
+    background: rgb(113, 97, 202);
+    font-weight: 200;
+    opacity: .9;
+    padding: 16px;
+    margin: 15px;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.download:hover {
+    color: white;
+    box-shadow: 0 6px 12px rgba(50, 50, 93, .11), 0 1px 4px rgba(0, 0, 0, .08);
+    opacity: 1;
+    transition: all .4s;
+    text-decoration: none;
+}
+
+.download:focus {
+    color: white;
+}
+
+#launch .download > .icon {
+    color: white;
+    margin-right: 8px;
+}
+
+.windows {
+    display: block;
+    margin-top: 30px;
+    color: rgba(69, 68, 70, 0.6);
+}
+
+.documentation {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 30px;
+}
+
+.documentation .icon {
+    margin-right: 8px;
+}
+
+@media screen and (max-width: 480px) {
+    .download {
+        width: 100%;
+        display: block;
+        margin: 15px 0;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px){
+    #rabix .download {
+        width: 80%;
+        display: block;
+        margin: 15px auto;
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    #rabix .download-links {
+        margin-bottom: 45px;
     }
 }

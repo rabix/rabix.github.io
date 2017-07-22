@@ -18,6 +18,8 @@ html {
     font-family: sans-serif;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 body {
@@ -3726,14 +3728,6 @@ tbody.collapse.in {
     border-width: 1px 0 0;
 }
 
-.navbar-brand {
-    float: left;
-    padding: 15px 15px;
-    font-size: 18px;
-    line-height: 20px;
-    height: 50px;
-}
-
 .navbar-brand:hover,
 .navbar-brand:focus {
     text-decoration: none;
@@ -3741,13 +3735,6 @@ tbody.collapse.in {
 
 .navbar-brand > img {
     display: block;
-}
-
-@media (min-width: 768px) {
-    .navbar > .container .navbar-brand,
-    .navbar > .container-fluid .navbar-brand {
-        margin-left: -15px;
-    }
 }
 
 .navbar-toggle {
