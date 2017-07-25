@@ -2,7 +2,7 @@ $(function() {
     var data = [
         {
             action: 'type',
-            strings: ["wget https://github.com/rabix/bunny/releases/download/v1.0.0-rc3/rabix-1.0.0-rc3.tar.gz && tar -xvf rabix-1.0.0-rc3.tar.gz"],
+            strings: ["wget https://github.com/rabix/bunny/releases/download/v1.0.1/rabix-1.0.1.tar.gz && tar -xvf rabix-1.0.1.tar.gz"],
             output: '<span class="gray">rabix installed</span><br>&nbsp;',
             postDelay: 1000
         },
