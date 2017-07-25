@@ -13,6 +13,12 @@ $(function() {
         },
         {
             action: 'type',
+            strings: ["cd rabix-cli-1.0.1"],
+            output: ' ',
+            postDelay: 500
+        },
+        {
+            action: 'type',
             strings: ["./rabix examples/dna2protein/dna2protein.cwl.json examples/dna2protein/inputs.json"],
             output: '<span class="gray">example running</span><br>&nbsp;',
             postDelay: 500
