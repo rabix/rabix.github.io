@@ -1,41 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 1643.7 1116.8" style="enable-background:new 0 0 1643.7 1116.8;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:none;stroke:#E8E8E8;stroke-width:16;stroke-miterlimit:10;}
-	.st1{fill:none;stroke:#D1D1D1;stroke-width:8;stroke-miterlimit:10;}
-	.st2{fill:#E8E8E8;}
-	.st3{fill:#999999;}
-	.st4{fill:none;stroke:#D1D1D1;stroke-width:24;stroke-miterlimit:10;}
-	.st5{fill:#F9F9F9;}
-	.st6{fill:#A0A0A0;}
+	.st0{fill:none;stroke:#D1D1D1;stroke-width:24;stroke-miterlimit:10;}
+	.st1{fill:#666666;}
+	.st2{fill:#11A7A7;}
+	.st3{fill:none;stroke:#666666;stroke-width:16;stroke-miterlimit:10;}
+	.st4{fill:none;stroke:#666666;stroke-width:8;stroke-miterlimit:10;}
+	.st5{fill:#525252;}
+	.st6{fill:#999999;}
 </style>
 <title>workflow_2</title>
-<g id="Layer_2">
-	<g id="Layer_1-2">
-		<rect x="8" y="8" class="st0" width="1627.7" height="1100.8"/>
-		<line class="st1" x1="25.3" y1="97.5" x2="1618.4" y2="97.5"/>
-		<circle class="st2" cx="56.1" cy="55.5" r="20.8"/>
-		<circle class="st3" cx="115.3" cy="55.5" r="20.8"/>
-		<circle class="st2" cx="174.6" cy="55.5" r="20.8"/>
-		<line class="st4" x1="450.7" y1="303.2" x2="787" y2="303.2"/>
-		<path class="st4" d="M442,609.9c0,0,93.9-6.6,111,58.3s71.7,93.7,123.5,94.6"/>
-		<path class="st4" d="M437.8,930.6c0,0,130.6,17.2,132.5-62.5s118.3-68.9,118.3-68.9"/>
-		<path class="st4" d="M837.5,762.7c0,0,172.1,11.5,177.8-123.8s220.5-137.4,220.5-137.4"/>
-		<path class="st4" d="M955.1,303.2c0,0,124.2,1.7,135.5,66s111.5,83.2,145.3,84.5"/>
-		<circle class="st5" cx="366.7" cy="612.9" r="84"/>
-		<circle class="st5" cx="366.7" cy="303.2" r="84"/>
-		<circle class="st5" cx="871" cy="303.2" r="84"/>
-		<circle class="st5" cx="753.5" cy="762.7" r="84"/>
-		<circle class="st5" cx="1308.9" cy="467" r="84.1"/>
-		<circle class="st5" cx="366.7" cy="922.6" r="84"/>
-		<circle class="st6" cx="366.7" cy="303.2" r="67"/>
-		<circle class="st6" cx="366.7" cy="612.9" r="67"/>
-		<circle class="st6" cx="366.7" cy="922.6" r="67"/>
-		<circle class="st6" cx="753.5" cy="762.7" r="67"/>
-		<circle class="st6" cx="871" cy="303.2" r="67"/>
-		<circle class="st6" cx="1308.9" cy="467" r="67"/>
-	</g>
+<g id="Layer_1-2">
+	<line class="st0" x1="450.7" y1="303.2" x2="787" y2="303.2"/>
+	<path class="st0" d="M442,609.9c0,0,93.9-6.6,111,58.3s71.7,93.7,123.5,94.6"/>
+	<path class="st0" d="M437.8,930.6c0,0,130.6,17.2,132.5-62.5s118.3-68.9,118.3-68.9"/>
+	<path class="st0" d="M837.5,762.7c0,0,172.1,11.5,177.8-123.8s220.5-137.4,220.5-137.4"/>
+	<path class="st0" d="M955.1,303.2c0,0,124.2,1.7,135.5,66s111.5,83.2,145.3,84.5"/>
+	<circle class="st1" cx="366.7" cy="612.9" r="84"/>
+	<circle class="st1" cx="366.7" cy="303.2" r="84"/>
+	<circle class="st1" cx="871" cy="303.2" r="84"/>
+	<circle class="st1" cx="753.5" cy="762.7" r="84"/>
+	<circle class="st1" cx="1308.9" cy="467" r="84.1"/>
+	<circle class="st1" cx="366.7" cy="922.6" r="84"/>
+	<circle class="st2" cx="366.7" cy="303.2" r="67"/>
+	<circle class="st2" cx="366.7" cy="612.9" r="67"/>
+	<circle class="st2" cx="366.7" cy="922.6" r="67"/>
+	<circle class="st2" cx="753.5" cy="762.7" r="67"/>
+	<circle class="st2" cx="871" cy="303.2" r="67"/>
+	<circle class="st2" cx="1308.9" cy="467" r="67"/>
+	<rect x="8" y="8" class="st3" width="1627.7" height="1100.8"/>
+	<line class="st4" x1="25.3" y1="97.5" x2="1618.4" y2="97.5"/>
+	<circle class="st5" cx="56.1" cy="55.5" r="20.8"/>
+	<circle class="st6" cx="115.3" cy="55.5" r="20.8"/>
+	<circle class="st5" cx="174.6" cy="55.5" r="20.8"/>
 </g>
 </svg>

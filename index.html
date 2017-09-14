@@ -203,62 +203,67 @@
                 <p>
                     The Rabix project is currently supporting two efforts:
                 </p>
-                <div class="col-md-6">
-                    <h3><a href="https://github.com/rabix/bunny"
-                           target="_blank">The Rabix Executor ›</a></h3>
-                    <img src="images/executor.svg" alt="">
-                    <p>
-                        The Rabix Executor supports the <a href="http://www.commonwl.org/" target="_blank">Common
-                        Workflow
-                        Language</a>
-                        (CWL) and is currently runnable from the command line. It is suitable for local testing and
-                        development. Rabix also supports the Global
-                        <a href="http://genomicsandhealth.org/" target="_blank">Alliance for Genomics Health</a> (GA4GH)
-                        <a href="https://github.com/ga4gh/task-execution-server" target="_blank">Task Execution
-                            Server</a> (TES) as a way to scale to cloud environments.
-                    </p>
-                    <div class="row text-center download-links">
-                        <a href="https://github.com/rabix/bunny/releases/latest" class="download" target="_blank">
-                            <span data-icon="&#xe04d;" class="icon"></span>
-                            <span>Download Rabix Executor</span>
-                        </a>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3><a href="https://github.com/rabix/bunny"
+                               target="_blank">The Rabix Executor ›</a></h3>
+                        <img src="images/executor.svg" alt="">
+                        <p>
+                            The Rabix Executor supports the <a href="http://www.commonwl.org/" target="_blank">Common
+                            Workflow
+                            Language</a>
+                            (CWL) and is currently runnable from the command line. It is suitable for local testing and
+                            development. Rabix also supports the Global
+                            <a href="http://genomicsandhealth.org/" target="_blank">Alliance for Genomics Health</a>
+                            (GA4GH)
+                            <a href="https://github.com/ga4gh/task-execution-server" target="_blank">Task Execution
+                                Server</a> (TES) as a way to scale to cloud environments.
+                        </p>
+                        <div class="row text-center download-links">
+                            <a href="https://github.com/rabix/bunny/releases/latest" class="download" target="_blank">
+                                <span data-icon="&#xe04d;" class="icon"></span>
+                                <span>Download Rabix Executor</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h3><a href="https://github.com/rabix/cottontail-frontend" target="_blank">The Rabix Composer
+                            ›</a>
+                        </h3>
+                        <img src="images/cottontail.svg" alt="">
+                        <p>
+                            The Rabix Composer is a standalone integrated development environment with rich visual and
+                            text-based editors for rapidly describing tools and workflows in the Common Workflow
+                            Language
+                            (CWL). Use as a standalone application or sync with one of <a
+                                href="https://www.sevenbridges.com" target="_blank">Seven Bridges’ Cloud Platforms</a>
+                            to
+                            scale your analyses
+                            (<a href="http://www.cancergenomicscloud.org/" target="_blank">CGC</a>, <a
+                                href="http://www.cavatica.org/" target="_blank">Cavatica</a>).
+                        </p>
+                        <div class="row text-center download-links">
+                            <a href="https://github.com/rabix/composer/releases/download/v1.0.0-beta.3/rabix-composer-macOS-beta-3.zip"
+                               class="download">
+                                <span data-icon="&#xe04d;" class="icon"></span>
+                                <span>Download for Mac</span>
+                            </a>
+                            <a href="https://github.com/rabix/composer/releases/download/v1.0.0-beta.3/rabix-composer-linux-x64-beta-3.tar.gz"
+                               class="download">
+                                <span data-icon="&#xe04d;" class="icon"></span>
+                                <span>Download for Linux</span>
+                            </a>
+                            <span class="windows">Windows version coming soon</span>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <h3><a href="https://github.com/rabix/cottontail-frontend" target="_blank">The Rabix Composer ›</a>
-                    </h3>
-                    <img src="images/cottontail.svg" alt="">
-                    <p>
-                        The Rabix Composer is a standalone integrated development environment with rich visual and
-                        text-based editors for rapidly describing tools and workflows in the Common Workflow Language
-                        (CWL). Use as a standalone application or sync with one of <a
-                            href="https://www.sevenbridges.com" target="_blank">Seven Bridges’ Cloud Platforms</a> to
-                        scale your analyses
-                        (<a href="http://www.cancergenomicscloud.org/" target="_blank">CGC</a>, <a
-                            href="http://www.cavatica.org/" target="_blank">Cavatica</a>).
-                    </p>
-                    <div class="row text-center download-links">
-                        <a href="https://github.com/rabix/composer/releases/download/v1.0.0-beta.3/rabix-composer-macOS-beta-3.zip"
-                           class="download">
-                            <span data-icon="&#xe04d;" class="icon"></span>
-                            <span>Download for Mac</span>
-                        </a>
-                        <a href="https://github.com/rabix/composer/releases/download/v1.0.0-beta.3/rabix-composer-linux-x64-beta-3.tar.gz"
-                           class="download">
-                            <span data-icon="&#xe04d;" class="icon"></span>
-                            <span>Download for Linux</span>
-                        </a>
-                        <span class="windows">Windows version coming soon</span>
-                    </div>
-                </div>
-
             </div>
         </div>
     </div>
 </section>
 
 <!-- Section captions -->
-<section id="intro" class="section-a intro">
+<section id="intro" class="section-a">
     <div class="container">
         <div class="row">
             <div class="col-md-4">
@@ -330,41 +335,51 @@
                     documentation/communication, and human error leads to a great deal of disharmony and can impede
                     scientific progress.
                 </p>
-                <div class="col-md-6">
-                    <img src="images/containers.svg" alt="">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="images/containers.svg" alt="">
+                    </div>
+                    <p class="col-md-6">
+                        In recent years, a technology which makes it easier to share software and run everywhere in
+                        exactly
+                        the same way has become increasingly popular - <b>software containers</b>. Containers allow
+                        developers to package software into a discrete environment with its own virtual file system and
+                        dependencies. This means that whole teams can operate in a “single environment”, which minimizes
+                        errors when sharing and testing code, making it easier to scale. Recent technologies such as
+                        Docker
+                        (est. 2013) have automated
+                        the process of creating and sharing software containers, spurring much broader adoption and
+                        lowering
+                        the technical barrier to entry.
+                    </p>
+                    <p class="col-md-6">
+                        However, a major hurdle to reproducible software deployment persists - software containers may
+                        contain all the “pieces” to perform an analysis (besides data), but not the instructions on how
+                        to
+                        use them. It’s like having a box of ingredients without a recipe - every chef makes a different
+                        dish. To help solve this issue, the concept of <b>workflow descriptions</b> has been applied to
+                        containers to further enhance reproducibility, simplify software sharing/publication, and
+                        reducing
+                        the
+                        activation energy needed to start using a new algorithm or verify a scientific finding.
+                    </p>
+                    <div class="col-md-6">
+                        <img src="images/workflow.svg" alt="">
+                    </div>
+                    <h3 class="col-md-12"><br>Simply put, the mission of the Rabix project is to further the
+                        reproducibility
+                        of biomedical computing.</h3>
+                    <p class="col-md-12">
+                        This is why much of the Rabix team are proud to be founding members of the Common Workflow
+                        Language,
+                        a
+                        community-driven effort to create a standard specification for reproducible workflows. Created
+                        in
+                        2014, CWL is now widely-adopted among academic centers and industrial partners. The Rabix
+                        Executor is an open-source technology for implementing Common Workflow Language to
+                        its fullest potential.
+                    </p>
                 </div>
-                <p class="col-md-6">
-                    In recent years, a technology which makes it easier to share software and run everywhere in exactly
-                    the same way has become increasingly popular - <b>software containers</b>. Containers allow
-                    developers to package software into a discrete environment with its own virtual file system and
-                    dependencies. This means that whole teams can operate in a “single environment”, which minimizes
-                    errors when sharing and testing code, making it easier to scale. Recent technologies such as Docker
-                    (est. 2013) have automated
-                    the process of creating and sharing software containers, spurring much broader adoption and lowering
-                    the technical barrier to entry.
-                </p>
-                <p class="col-md-6">
-                    However, a major hurdle to reproducible software deployment persists - software containers may
-                    contain all the “pieces” to perform an analysis (besides data), but not the instructions on how to
-                    use them. It’s like having a box of ingredients without a recipe - every chef makes a different
-                    dish. To help solve this issue, the concept of <b>workflow descriptions</b> has been applied to
-                    containers to further enhance reproducibility, simplify software sharing/publication, and reducing
-                    the
-                    activation energy needed to start using a new algorithm or verify a scientific finding.
-                </p>
-                <div class="col-md-6">
-                    <img src="images/workflow.svg" alt="">
-                </div>
-                <h3 class="col-md-12"><br>Simply put, the mission of the Rabix project is to further the reproducibility
-                    of biomedical computing.</h3>
-                <p class="col-md-12">
-                    This is why much of the Rabix team are proud to be founding members of the Common Workflow Language,
-                    a
-                    community-driven effort to create a standard specification for reproducible workflows. Created in
-                    2014, CWL is now widely-adopted among academic centers and industrial partners. The Rabix
-                    Executor is an open-source technology for implementing Common Workflow Language to
-                    its fullest potential.
-                </p>
             </div>
         </div>
     </div>
@@ -373,7 +388,7 @@
 <!-- Section faqs -->
 <section id="faq" class="section-a">
     <div class="container">
-        <div class="raw">
+        <div class="row">
             <div class="col-md-10 col-md-offset-1">
                 <h2>FAQs</h2>
                 <h3>Which open-source licenses are used?</h3>
