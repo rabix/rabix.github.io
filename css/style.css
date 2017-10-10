@@ -445,6 +445,13 @@ footer p {
     border-color: #a7115c !important;
 }
 
+#mce-success-response {
+    background: #ffffff;
+    padding: 15px;
+    color: #11a743;
+    border: 2px solid #11a743;
+}
+
 .download-links {
     margin-top: 45px;
 }
