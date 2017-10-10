@@ -433,6 +433,18 @@ footer p {
     font-weight: 400;
 }
 
+.asterisk {
+    color: #a7115c;
+}
+
+#mc_embed_signup div.mce_inline_error {
+    background-color: #a7115c !important;
+}
+
+#mc_embed_signup input.mce_inline_error {
+    border-color: #a7115c !important;
+}
+
 .download-links {
     margin-top: 45px;
 }
