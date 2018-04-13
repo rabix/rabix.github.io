@@ -142,7 +142,7 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a href="#rabix-composer" class="current">Release candidate</a>
+                    <a href="#rabix-composer" class="current">Releases</a>
                 </li>
                 <li>
                     <a href="http://docs.rabix.io" target="_blank">Documentation ↗</a>
@@ -174,41 +174,38 @@
     <div class="container">
         <div class="row">
             <div class="col-md-10 col-md-offset-1">
-
                 <div class="col-md-12">
                     <h2 class=" text-center">Rabix Composer</h2>
-                    <p class="text-center">(version 1.0.0-rc.1)</p>
+                    <p class="text-center">(version 1.0)</p>
                     <p>An integrated development environment to describe your tools and workflows with the <a
-                            href="http://www.commonwl.org/" target="_blank">Common Workflow Language</a>. Use as a
+                            href="http://www.commonwl.org/" target="_blank">Common Workflow Language</a>. Now integrated with the Rabix Executor so you can both develop and test through a single interface. Use as a
                         standalone application or sync with one of <a href="https://www.sevenbridges.com" target="_blank">Seven Bridges’ Cloud Platforms</a> to scale your analyses
                         (<a href="http://www.cancergenomicscloud.org/" target="_blank">CGC</a>, <a href="http://www.cavatica.org/" target="_blank">Cavatica</a>).</p>
                     <ul class="row">
                         <li class="col-lg-6">
                             <h3>Visual and Text Editors</h3>
                             <video autoplay loop>
-                                <source src="images/switch.webm" type="video/webm">
-                                <source src="images/switch.mp4" type="video/mp4">
+                                <source src="images/visual_text.webm" type="video/webm">
+                                <source src="images/visual_text.mp4" type="video/mp4">
                             </video>
                             <p>Seamlessly switch between rich visual and text editors to develop your CWL code
                                 faster</p>
                         </li>
                         <li class="col-lg-6">
-                            <h3>Rapidly create workflows</h3>
+                            <h3>Rapidly create and visualize workflows</h3>
                             <video autoplay loop>
-                                <source src="images/drag-drop.webm" type="video/webm">
-                                <source src="images/drag-drop.mp4" type="video/mp4">
+                                <source src="images/workflows.webm" type="video/webm">
+                                <source src="images/workflows.mp4" type="video/mp4">
                             </video>
-                            <p>Drag and drop tools onto the workflow canvas and easily create connections between
-                                them</p>
+                            <p>Drag and drop tools, easily create connections, select and rearrange nodes, highlight immediate connections, zoom, and auto-align complicated workflowss</p>
                         </li>
                         <li class="col-lg-6">
-                            <h3>Easily visualize workflow details</h3>
+                            <h3>Execute and test your CWL code</h3>
                             <video autoplay loop>
-                                <source src="images/highlight.webm" type="video/webm">
-                                <source src="images/highlight.mp4" type="video/mp4">
+                                <source src="images/execute_test.webm" type="video/webm">
+                                <source src="images/execute_test.mp4" type="video/mp4">
                             </video>
-                            <p>Select and rearrange nodes in a workflow, highlight immediate connections, zoom, and
-                                auto-align complicated workflows</p>
+                            <p>Integrated with our Rabix Composer CWL workflow engine to enable rapid develop and test cycles</p>
                         </li>
                         <li class="col-lg-6">
                             <h3>CWL compatibility</h3>
@@ -217,17 +214,21 @@
                         </li>
                     </ul>
                     <div class="row text-center download-links">
-                        <a href="https://github.com/rabix/composer/releases/download/v1.0.0-rc.2/rabix-composer-1.0.0-rc.2.dmg"
+                        <a href="https://github.com/rabix/composer/releases/download/1.0.0/rabix-composer-1.0.0.dmg"
                            class="download">
                             <span data-icon="&#xe04d;" class="icon"></span>
                             <span>Download for Mac</span>
                         </a>
-                        <a href="https://github.com/rabix/composer/releases/download/v1.0.0-rc.2/rabix-composer-1.0.0-rc.2.zip"
+                        <a href="https://github.com/rabix/composer/releases/download/1.0.0/rabix-composer-1.0.0-x86_64.AppImage"
                            class="download">
                             <span data-icon="&#xe04d;" class="icon"></span>
                             <span>Download for Linux</span>
                         </a>
-                        <span class="windows">Windows version coming soon</span>
+                        <a href="https://github.com/rabix/composer/releases/download/1.0.0/rabix-composer.Setup.1.0.0.exe"
+                           class="download">
+                            <span data-icon="&#xe04d;" class="icon"></span>
+                            <span>Download for Windows</span>
+                        </a>
                     </div>
                     <div class="row text-center">
                         <p class="documentation">
@@ -249,9 +250,9 @@
             <div class="col-md-10 col-md-offset-1">
                 <div class="col-md-12">
                     <h2 class=" text-center">Rabix Executor</h2>
-                    <p class="text-center">(version 1.0)</p>
-                    <p>Executes containerized bioinformatics tools using your CWL description on any Unix-based
-                        computational environment, and Seven Bridges Cloud Platforms.</p>
+                    <p class="text-center">(version 1.03)</p>
+                    <p>Executes containerized bioinformatics tools using your CWL description on any Unix-based computational environment. Executor is also the workflow engine for Seven Bridges Cloud Platforms.</p>
+                    <div class="youtube-player" data-id="UyOAOM2o_dg"></div>
                     <ul>
                         <li>Capable of running all drafts and versions of CWL
                         </li>
@@ -361,7 +362,38 @@
         crossorigin="anonymous"></script>
 
 <!-- Custom JavaScript -->
-<script src="js/script.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded",
+        function() {
+            var div, n,
+                v = document.getElementsByClassName("youtube-player");
+            for (n = 0; n < v.length; n++) {
+                div = document.createElement("div");
+                div.setAttribute("data-id", v[n].dataset.id);
+                div.innerHTML = labnolThumb(v[n].dataset.id);
+                div.onclick = labnolIframe;
+                v[n].appendChild(div);
+            }
+        });
+
+    function labnolThumb(id) {
+        var thumb = '<img src="./images/Rabix-video.jpg">',
+            play = '<div class="play"></div>';
+        return thumb.replace("ID", id) + play;
+    }
+
+    function labnolIframe() {
+        var iframe = document.createElement("iframe");
+        var embed = "https://www.youtube.com/embed/ID?autoplay=1";
+        iframe.setAttribute("src", embed.replace("ID", this.dataset.id));
+        iframe.setAttribute("frameborder", "0");
+        iframe.setAttribute("allowfullscreen", "1");
+        this.parentNode.replaceChild(iframe, this);
+    }
+</script>
+<script>
+    $('#year').append('<span>'+ new Date().getFullYear() +'</span>');
+</script>
 </body>
 
 </html>
