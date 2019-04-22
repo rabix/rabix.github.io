@@ -137,7 +137,7 @@
                   vendor neutral specification for workflow descriptions. 
                   Because there are a wide variety of executors that support CWL,
                   the same CWL document will run on a laptop, on HPC clusters, 
-                  on cloud infrastructure and on a variety of cloud platforms.
+                  on raw cloud infrastructure and on a variety of cloud platforms.
                   See the current list of implementations that support CWL 
                   <a href="https://www.commonwl.org/#Implementations">here</a>.
                 </p>
@@ -201,8 +201,7 @@
                     CWL-SVG is a Typescript library for visualization of 
                     Common Workflow Language workflows. It can be easily 
                     integrated into a website or typescript application to show
-                    interactive views of a CWL workflow. IT is available as an
-                    NPM package as well as source code.
+                    interactive views of a CWL workflow.
                 </p>
 
                 <p>
@@ -212,9 +211,10 @@
                   <a href="https://github.com/curoverse/arvados-workbench2" target="_blank">
                   Arvados workbench</a>,
                   <a href="https://github.com/TMiguelT/vue-cwl" target="_blank">
-                  Vue CWL</a> and the 
-                  <a href="https://github.com/datirium" target="_blank">
-                    Datrium platform</a> 
+                  Vue CWL</a>,
+                  the <a href="https://github.com/datirium" target="_blank">
+                    Datirium platform</a>, 
+                  and, of course, Rabix Composer. 
                 </p> 
 
                   <div class="text-center">
@@ -268,17 +268,30 @@
                     </div>
 
                 <h3>Rabix Executor [Legacy]: Runner for CWL pipelines</h3>
-                <p>Rabix Executor is a workflow runner that can execute 
-                CWL sbg:draft2 and CWL 1.0 pipelines. It has support for the
-                TES API and can be used in a limited manner to run pipelines
-                on cloud infrastructure. It is no longer being actively supported
-                since there are now many modern 
-                <a href="https://www.commonwl.org/#Implementations">CWL executors</a> 
-                for every conceivable platform.</p>
+                <p>
+                  Rabix Executor is a workflow runner that can execute 
+                  CWL sbg:draft2 and CWL 1.0 pipelines. It has support for the
+                  TES API and can be used in a limited manner to run pipelines
+                  on cloud infrastructure. 
+                  [<a href="https://www.ncbi.nlm.nih.gov/pubmed/27896971" target="_blank">PubMed</a>,
+                   <a href="http://biorxiv.org/content/early/2016/10/23/074708" target="_blank">bioRxiv</a>]
+                </p>
 
-                <p>We have a publication outlining the feature set within Rabix Executor. It is
-                  available on <a href="https://www.ncbi.nlm.nih.gov/pubmed/27896971" target="_blank">PubMed</a> and
-                  <a href="http://biorxiv.org/content/early/2016/10/23/074708" target="_blank">bioRxiv</a>.</p>
+                <p>
+                  When the Rabix project was in it's infancy and the CWL specification 
+                  was just being developed (ca. 2014-2016) Rabix Executor was 
+                  the only executor capable of running CWL. It proved invaluable 
+                  as a test bed for ideas for the specification that evolved into 
+                  CWL and as a living implementation of the specification.
+                </p>
+
+                <p><em>
+                  There are now many modern 
+                  <a href="https://www.commonwl.org/#Implementations">CWL executors</a> 
+                  for every conceivable platform. Rabix Executor is now in maintenance mode.
+                  Rabix Executor remains a stable local test runner for those people 
+                  wishing to run sbg:draft2 pipelines locally, but no new features will be added to it.
+                </em></p>
 
                 <div class="text-center">
                     <p>
@@ -313,14 +326,13 @@
             <div class="col-md-10 col-md-offset-1">
                 <h2>With love from SevenBridges</h2>
 
-                <p>Rabix (a portmanteau of "Reproducible Analyses for Bioinformatics") was founded by 
-                    <a href="https://www.sevenbridges.com" target="_blank">SevenBridges</a> in 2015.
-                  Rabix Executor and the founding Rabix team played a key role in the development
-                  of the CWL standard.
+                <p>SevenBridges is passionate about open standards in science and about
+                  providing high quality open source developer tooling around those standards.                   
+                  Rabix (a portmanteau of "Reproducible Analyses for Bioinformatics") was founded by 
+                  <a href="https://www.sevenbridges.com" target="_blank">SevenBridges</a> in 2015
+                  to support this mission. The Rabix team plays a key role in developing CWL 
+                  and tooling around CWL.
                 </p>    
-                 <p>SevenBridges is passionate about open standards in science and about
-                    providing high quality open source developer tooling around those standards.
-                  </p>
 
                 <div class="text-center">
                     <p>
