@@ -1,0 +1,60 @@
+/* Sits on top of turret.css */
+
+.content {
+  max-width: 750px;
+  margin: auto;
+}
+
+header {
+  color: #ffffff;
+  background-color: #11a7a7;
+  text-align: center;
+  padding-bottom: 1em;
+}
+
+header h1 {
+  font-size: 100px;
+  font: outline;
+  font-weight: 100;
+}
+
+.top-nav { 
+  color: #ffffff;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.top-nav ul li { 
+  display: inline-block; 
+}
+
+
+section {
+  margin-top: 2em;
+}
+
+h1, h2 {
+  font-weight: 400;
+}
+
+section nav ul { text-align: center; }
+section nav ul li { display: inline-block; }
+
+.question {
+  font-weight: 800
+}
+
+
+
+footer {
+  color: #777777;
+  background-color: #dddddd;
+  margin-bottom: 20px;
+  padding: 20px 0 20px;
+  text-align: center;
+  font: 9em;
+}
+
+footer p {
+  margin: 0;
+}

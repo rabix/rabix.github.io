@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Rabix: CWL by example</title>
+
+  <meta name="description" content="CWL tips and tricks from Rabix Tools">
+  <meta name="robots" content="noodp">
+  <link rel="canonical" href="http://www.rabix.io">
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="images/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="images/apple-touch-icon-60x60.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="images/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="images/apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="images/apple-touch-icon-152x152.png" />
+  <link rel="icon" type="image/png" href="images/favicon-196x196.png" sizes="196x196" />
+  <link rel="icon" type="image/png" href="images/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+  <link rel="icon" type="image/png" href="images/favicon-128.png" sizes="128x128" />
+  <meta name="application-name" content="&nbsp;" />
+  <meta name="msapplication-TileColor" content="#FFFFFF" />
+  <meta name="msapplication-TileImage" content="mstile-144x144.png" />
+  <meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
+  <meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
+  <meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
+  <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="CWL Patterns">
+  <meta property="og:description" content="CWL tips and tricks from Rabix Tools">
+  <meta property="og:url" content="http://www.rabix.io">
+  <meta property="og:site_name" content="Rabix: Power tools for the Common Workflow Language">
+  <meta property="og:image" content="http://rabix.io/images/facebook-Linked_Image___rabix_social.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:description" content="Rabix: CWL Patterns">
+  <meta name="twitter:title" content="CWL tips and tricks from Rabix Tools">
+  <meta name="twitter:image" content="http://rabix.io/images/twitter-In-Stream_Wide___rabix_social.png">
+  <meta name="twitter:creator" content="@Sbgenomics">
+
+  <link href="css/turretcss.min.css" rel="stylesheet">
+  <link href="css/rabix.css" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link rel="stylesheet" href="css/etline-font.css">
+
+  <link rel="stylesheet" href="highlight/styles/vs.css">
+  <script src="highlight/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-25508146-12', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+
+</head>
+
+<body>
+
+  <nav class="top-nav">
+    <ul>
+      <li>
+        <a href="index.html">Rabix</a>
+      </li>
+    </ul>
+  </nav>
+
+  <header>      
+    <h1>CWL Patterns</h1>
+    Tips for using the Common Workflow Language
+  </header>
+
+  <div class="content">
+      <section>
+        <p>This page contains some common patterns that are found when
+          describing tools and workflows in CWL. It is meant for users
+          who are currently writing CWL and need to quickly look up a 
+          practical pattern. If you want to add something to the list
+          just fork the <a href="https://github.com/rabix/rabix.github.io">website repository</a>,    
+          make the required changes and create a pull request.
+          The patterns are not in any particular order, and the webpage is
+          meant to be searched using the browser's find function.
+        </p>
+        <p>
+          For a systematic and gentle introduction to CWL please see
+          the <a href="https://www.commonwl.org/user_guide/">
+            CWL user guide</a> which is a good resource for a self-paced
+          introduction to CWL.
+        </p>
+        <p>
+          Biostars is a good source of help on CWL via the 
+          <a href="https://www.biostars.org/t/cwl/">CWL tag</a>. 
+        </p>
+      </section>
+      <hr>
+      <section>
+        <p class="question">
+          Q: My program performs joint processing on a batch of multiple files.
+          I used to pass each file name on the command line, but when I scale
+          up I run into unix "Argument list too long" errors. What can I do?  
+        </p>
+        A: The most resilient solution is to alter the program to accept a
+        manifest file. Most programs allow file names to be passed, one to a line,
+        in an input text file. You can then use javascript and an 
+        <code>InitialWorkDirRequirement</code> to create this manifest file
+        on the fly from the a File list input as follows:
+        <pre><code class="yaml">
+class: CommandLineTool
+cwlVersion: v1.0
+
+inputs:
+  input: 'File[]?'
+
+baseCommand: cat
+arguments: [manifest.txt]
+
+requirements:
+  - class: DockerRequirement
+    dockerPull: alpine
+  - class: InitialWorkDirRequirement
+    listing:
+      - entryname: manifest.txt
+        entry: |-
+          ${
+              var x = ""
+              for (var i = 0; i < inputs.input.length; i++)  
+              { 
+                  x += inputs.input[i].path + "\n"; 
+              }
+              return x;
+          }
+        writable: false
+  - class: InlineJavascriptRequirement
+
+outputs:
+  output: stdout
+
+stdout: out.txt
+</code></pre>
+
+      </section>
+
+      <section>
+        <p class="question">
+          Q: I have a large file which I want to index. My indexing tool insists
+          on creating the index in the same location as the file. I don't want
+          to copy the file into my working directory, and, of course, I don't
+          have write access to the original file.
+        </p>
+        <p>
+          A: It is best to stage the input file using 
+          <code>InitialWorkDirRequirement</code>  
+          <pre><code class="yaml">cwlVersion: v1.0
+class: CommandLineTool
+baseCommand: cat
+
+inputs:
+  input_file:
+    type: File
+    inputBinding:
+      position: 1
+      valueFrom: $(self.basename)
+
+requirements:
+  InitialWorkDirRequirement:
+    listing:
+      - $(inputs.in1)
+
+outputs:
+  out1: stdout
+
+hints:
+  DockerRequirement:
+    dockerPull: alpine</code></pre>
+        </p>
+      </section>
+
+      <section>
+        <p class="question">
+          Q: I have one input which can be
+          (a) an array files, (b) nothing at all, (c) an array of null.
+          How do I write my input to accommodate this?
+        </p>
+          A: The closest is probably:
+          <pre><code class="yaml">my_input:
+  type:
+    - type: array
+      items: ["null", File]
+    - "null"</code></pre>
+          
+          Which will allow nothing at all and a list containing both Files
+          and/or nulls
+      </section>
+
+      <section>
+        <p class="question">
+          Q: I have a tool - like say <code>samtools</code> or <code>vcf-sort</code>
+          - that writes to <code>stdout</code>. 
+          What is a succinct CWL idiom for collecting data written to stdout into a file?
+          In bash one would do <code>vcf-sort -c in.vcf > out.vcf</code> 
+        </p>
+
+        <p>
+          A: Use:
+<pre><code class="yaml">outputs: 
+  out: stdout
+
+stdout: out.vcf</code></pre>
+        </p>
+        <p>
+          If you don't explicitly need a file <code>out.vcf</code> in that tool
+          itself: you are just interested in the data, you can be even briefer:
+<pre><code class="yaml">outputs: 
+  out: stdout</code></pre>
+        </p>
+      </section>
+  </div>
+
+
+  <footer>
+    <p>Rabix is a Trademark of <a href="https://www.sevenbridges.com" target="_blank">Seven Bridges Genomics</a>
+    <p>Copyright © 2019 Seven Bridges Genomics</p>
+  </footer>
+
+</body>
+</html>
