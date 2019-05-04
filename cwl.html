@@ -86,15 +86,12 @@
 
 <body>
 
-  <nav class="top-nav">
-    <ul>
-      <li>
-        <a href="index.html">Rabix</a>
-      </li>
-    </ul>
-  </nav>
 
   <header>      
+    <nav>
+      <a href="index.html">Rabix</a>
+    </nav>
+      
     <h1>CWL Patterns</h1>
     Tips for using the Common Workflow Language
   </header>
@@ -166,7 +163,77 @@ outputs:
 
 stdout: out.txt
 </code></pre>
+      </section>
 
+      <section>
+        <p class="question">
+          Q: I have a Python script that I want to embed in my tool wrapper
+          (not make part of the docker image). How would I do this?
+        </p>
+        A: You can embed the script as an <code>InitialWorkDirRequirement</code>
+        <pre><code class="yaml">class: CommandLineTool
+cwlVersion: v1.0
+
+inputs:
+  message: string
+
+baseCommand: ["python", "myscript.py"]
+
+requirements:
+  InitialWorkDirRequirement:
+    listing:
+      - entryname: myscript.py
+        entry: |-
+          print("$(inputs.message)") 
+
+outputs:
+  example_out:
+    type: stdout
+stdout: output.txt</code></pre>
+      </section>
+      <section>
+        <p class="question">
+          Followup Q: My embedded (Bash/Python/R) script has "$" signs in it 
+          and this is conflicting with CWL parameter references. How do get them to
+          play nicely together?
+        </p>
+        A: You can escape the "$" in your script with "\$"
+
+        <p class="question">
+          Followup Q: I'd rather just paste the script into the CWL and not
+          have to go through it, escaping the "$" signs. Do I have another option?
+        </p>
+        A: You could embed your script in the "contents" field of the default
+        value of a file as follows:
+
+<pre><code class="yaml">#!/usr/bin/env cwl-runner
+cwlVersion: v1.0
+class: CommandLineTool
+label: Run an embedded Python script
+hints:
+  DockerRequirement:
+    dockerPull: python:3
+baseCommand: python
+
+inputs: 
+  script: 
+    type: File
+    inputBinding:
+      position: 1
+    default:
+        class: File
+        basename: "script.py"
+        contents: |-
+          cash = 256.75
+          print("This costs ${}".format(cash))
+
+outputs:
+  results:
+    type: stdout</code></pre>
+      
+      To note in this solution is that a user can supply a different file
+      to the <code>script</code> input and override the default script.
+      This can be considered a bug or a feature, depending on your use case.  
       </section>
 
       <section>
