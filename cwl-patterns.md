@@ -1,7 +1,5 @@
----
-title: "CWL Patterns"
-description: "Tips for Using the Common Workflow Language"
----
+# CWL Patterns
+_Tips for Using the Common Workflow Language_
 
 This page contains some common patterns that are found when
 describing tools and workflows in CWL. It is meant for users
@@ -182,4 +180,29 @@ If you don't explicitly need a file `out.vcf` in that tool itself: you are just 
 ```yaml
 outputs: 
   out: stdout
+```
+
+**Q: I have a `File` input for my `CommandLineTool`. If the user does not supply a file, 
+I would like to use a default file that I have stored in the docker image/have available on my file system**
+
+A: You can supply a default `File` object
+
+```yaml
+class: CommandLineTool
+cwlVersion: v1.0
+inputs: 
+  in1:
+    type: File
+    default: 
+      class: File
+      path: /path/to/my/file
+    inputBinding:
+      position: 1
+
+baseCommand: cat
+
+outputs:
+  ou1: stdout
+
+stdout: myfile.txt
 ```
