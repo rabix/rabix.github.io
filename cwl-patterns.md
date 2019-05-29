@@ -4,19 +4,22 @@ _Tips for Using the Common Workflow Language_
 This page contains some common patterns that are found when
 describing tools and workflows in CWL. It is meant for users
 who are currently writing CWL and need to quickly look up a 
-practical pattern. If you want to add something to the list
-just fork the [website repository](https://github.com/rabix/rabix.github.io),
-make the required changes and create a pull request.
+practical pattern. 
+
 The patterns are not in any particular order, and the webpage is
 meant to be searched using the browser's find function.
 
-For a systematic and gentle introduction to CWL please see
+If you want to add something to the list, or you find an error
+please open an [issue](https://github.com/rabix/rabix.github.io/issues)
+or create a [pull request](https://github.com/rabix/rabix.github.io/pulls) with fixes.
+
+_For a systematic and gentle introduction to CWL please see
 the [CWL user guide](https://www.commonwl.org/user_guide/)
 which is a good resource for a self-paced
-introduction to CWL.
+introduction to CWL._
 
-Biostars is a good source of help on CWL via the
-[CWL tag](https://www.biostars.org/t/cwl/).
+_Biostars is a good source of help on CWL via the
+[CWL tag](https://www.biostars.org/t/cwl/)._
 
 <hr>
 
@@ -150,7 +153,7 @@ hints:
     dockerPull: alpine
 ```
 
-**Q: I have one input which can be (1) an array files, (2) nothing at all, (3) an array of null. How do I write my input to accommodate this?**
+**Q: I have one input which can be (1) an array of files, (2) nothing at all, (3) an array of null. How do I write my input to accommodate this?**
 
 A: The closest is probably:
 
@@ -205,4 +208,24 @@ outputs:
   ou1: stdout
 
 stdout: myfile.txt
+```
+
+**Q: Is there a way to return absolutely all outputs from the tool no matter what type they are?**
+
+A: 
+
+```yaml
+my_output:
+  type: Directory
+  outputBinding: { glob: . }
+```
+
+Or
+
+```yaml
+my_output:
+  type:
+    type: array
+    items: [Directory, File]
+  outputBinding: {glob: "*"}
 ```
