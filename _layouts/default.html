@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="Power Tools for the Common Workflow Language">
+    <meta name="author" content="Seven Bridges">
+    <meta name="keywords" content="IDE, CWL, Common Workflow Language">    
+    
+    <title>Rabix: Power Tools for the Common Workflow Language</title>
+    
+    <link rel="icon" type="image/png" href="images/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="images/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="images/favicon-128.png" sizes="128x128" />
+
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Rabix: Power tools for the Common Workflow Language">
+    <meta property="og:description" content="Rabix: Power tools for the Common Workflow Language">
+    <meta property="og:url" content="http://www.rabix.io">
+    <meta property="og:site_name" content="Rabix: Power tools for the Common Workflow Language">
+    <meta property="og:image" content="http://rabix.io/images/facebook-Linked_Image___rabix_social.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:description" content="Rabix: Power tools for the Common Workflow Language">
+    <meta name="twitter:title" content="Rabix: Power tools for the Common Workflow Language">
+    <meta name="twitter:image" content="https://repository-images.githubusercontent.com/77238640/8002bd80-8218-11e9-8c92-5e3da8e25c85">
+    <meta name="twitter:creator" content="@SBGenomics">
+    
+    {% seo %}
+
+    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <!-- <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1> -->
+        
+        {% if site.logo %}
+          <img src="{{site.logo | relative_url}}" alt="Seven Bridges Rabix" />
+        {% endif %}
+
+        <p>{{ site.description | default: site.github.project_tagline }}</p>
+
+        <a href="/">Software</a></br>
+        <a href="/cwl-patterns.html">CWL Patterns</a>
+
+        <!-- <p class="view"><a href="/cwl-opinionated-intro.html">Introduction to CWL</a></p> -->
+
+        <hr>
+        
+        <a href="https://github.com/rabix">GitHub</a></br>
+        <a href="https://gitter.im/rabix/composer">Chat</a></br>
+        <a href="mailto:rabix@sevenbridges.com">rabix@sevenbridges.com</a>
+
+      </header>
+      <section>
+
+      {{ content }}
+
+      </section>
+
+      <footer>
+        <h3>With love from Seven Bridges</h3>
+        <small>
+          <p>
+            Seven Bridges is passionate about open standards in science and about providing high 
+            quality open source developer tooling around those standards.
+          </p>
+          <p>
+            Rabix (a portmanteau of "Reproducible Analyses for Bioinformatics") was founded 
+            by Seven Bridges in 2015 to support this mission.
+          </p>
+          <p>
+            The Rabix team plays a key role in advancing the CWL specification and developing 
+            tooling around CWL.
+          </p>
+          <p>
+            Rabix is a Trademark of Seven Bridges</br>
+            Copyright © 2019 Seven Bridges
+          </p>
+        </small>
+      </footer>
+
+    </div>
+    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+    {% if site.google_analytics %}
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', '{{ site.google_analytics }}', 'auto');
+      ga('send', 'pageview');
+    </script>
+    {% endif %}
+  </body>
+</html>
