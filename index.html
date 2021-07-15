@@ -88,7 +88,7 @@
     <nav>
           <a href="https://github.com/common-workflow-library/cwl-patterns">CWL Patterns</a>
     </nav>
-      
+
     <h1>Rabix</h1>
     Power tools for the Common Workflow Language
   </header>
@@ -116,62 +116,6 @@
 
     <section>
       <h1>What does Rabix provide?</h1>
-
-      <section>
-        <h2>Rabix Composer: Visual programming in CWL</h2>
-        <p>CWL documents are text files describing computational steps.
-          CWL written in YAML format is compact and easily read by users.
-          While some users are comfortable creating CWL workflows "by
-          hand" using a text editor, others may prefer Rabix Composer:
-          a powerful, open source, graphical editor allowing
-          visual programming in CWL. Rabix Composer enables a user to
-          quickly create complex CWL workflows without having to
-          remember the details of CWL syntax.
-        </p>
-
-        <img class="pure-img" src="https://github.com/rabix/composer/raw/master/doc/images/workflows.gif">
-
-        <nav>
-          <ul>
-            <li>
-              <a href="http://docs.rabix.io/rabix-composer-home" target="_blank">
-                <span><span data-icon="&#xe00b;" class="icon"></span>Documentation</span>
-              </a>
-            </li>
-            <li>
-              <a href="https://gitter.im/rabix/composer" target="_blank">
-                <span><span data-icon="&#xe049;" class="icon"></span>Chat</span>
-              </a>
-            </li>
-            <li>
-              <a href="https://github.com/rabix/composer" target="_blank">
-                <span><span data-icon="&#xe02b;" class="icon"></span>Source code</span>
-              </a>
-            </li>
-          </ul>
-        </nav>
-
-        <nav>
-          <ul>
-            <li class="button button-pill">
-              <a href="https://github.com/rabix/composer/releases/download/1.0.1/rabix-composer-1.0.1.dmg">
-                <span><span data-icon="&#xe04d;" class="icon"></span>Mac</span>
-              </a>
-            </li>
-            <li class="button button-pill">
-              <a href="https://github.com/rabix/composer/releases/download/1.0.1/rabix-composer-1.0.1-x86_64.AppImage">
-                <span><span data-icon="&#xe04d;" class="icon"></span>Linux</span>
-              </a>
-            </li>
-            <li class="button button-pill">
-              <a href="https://github.com/rabix/composer/releases/download/1.0.1/rabix-composer.Setup.1.0.1.exe">
-                <span><span data-icon="&#xe04d;" class="icon"></span>Windows</span>
-              </a>
-            </li>
-          </ul>
-        </nav>
-
-      </section>
 
       <section>
         <h2>Rabix Benten: Code intelligence for CWL editing</h2>
@@ -206,10 +150,40 @@
             </li>
           </ul>
         </nav>
-      
+
       </section>
-      
-      
+
+      <section>
+        <h2>sbpack: Command line interface for pushing and pulling local CWL to/from a Seven Bridges Platform</h2>
+        <p>sbpack is a command line tool, written in Python, to upload (sbpack)
+           and download (sbpull) CWL apps to/from any Seven Bridges powered
+           platform. This enables local text-based CWL development, use of
+           version control for workflows, and the ability to send workflows to
+           and from the platform with ease.
+        </p>
+
+        <nav>
+          <ul>
+            <li>
+                <a href="https://pypi.org/project/sbpack/" target="_blank">
+                <span><span data-icon="&#xe04d;" class="icon"></span>Python Package</span>
+              </a>
+            </li>
+            <li>
+                <a href="https://github.com/rabix/sbpack/issues" target="_blank">
+                <span><span data-icon="&#xe049;" class="icon"></span>Support</span>
+              </a>
+            </li>
+            <li>
+                <a href="https://github.com/rabix/sbpack" target="_blank">
+                <span><span data-icon="&#xe02b;" class="icon"></span>Source code</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+      </section>
+
       <section>
         <h2>CWL-SVG: interactive SVG visualization of CWL workflows</h2>
         <p>
@@ -285,7 +259,82 @@
       </section>
 
       <section>
-        <h2>Rabix Executor [Legacy]: Runner for CWL pipelines</h2>
+        <h2>Rabix Composer: Visual programming in CWL [Legacy]</h2>
+        <p>CWL documents are text files describing computational steps.
+          CWL written in YAML format is compact and easily read by users.
+          While some users are comfortable creating CWL workflows "by
+          hand" using a text editor, others may prefer Rabix Composer:
+          a powerful, open source, graphical editor allowing
+          visual programming in CWL. Rabix Composer enables a user to
+          quickly create complex CWL workflows without having to
+          remember the details of CWL syntax.
+        </p>
+
+        <h3>Support Notice</h3>
+
+        <p><em>
+            Rabix Composer will remain available as a local sbg:draft2 and
+            CWL 1.0 tool and workflow editor. However, please note that Seven
+            Bridges is not actively maintaining or extending Rabix Composer at
+            the moment (Q2 2021). The repository will remain open for new issues
+            and pull requests, but please have in mind that those may not be
+            processed in a timely manner.
+        </p>
+        <p>
+            If you need an up-to-date CWL editor, you can create an account
+            either on the
+            <a href="http://cgc.sbgenomics.com/", target="_blank">CGC</a>,
+            <a href="https://platform.sb.biodatacatalyst.nhlbi.nih.gov/", target="_blank">Biodata Catalyst powered by Seven Bridges</a>,
+            or on <a href="https://cavatica.sbgenomics.com/", target="_blank">CAVATICA</a>
+            and use the Web Composer available there. Web Composer is also
+            available on the Seven Bridges Commercial offerings.
+        </em></p>
+
+        <img class="pure-img" src="https://github.com/rabix/composer/raw/master/doc/images/workflows.gif">
+
+        <nav>
+          <ul>
+            <li>
+              <a href="http://docs.rabix.io/rabix-composer-home" target="_blank">
+                <span><span data-icon="&#xe00b;" class="icon"></span>Documentation</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://gitter.im/rabix/composer" target="_blank">
+                <span><span data-icon="&#xe049;" class="icon"></span>Chat</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/rabix/composer" target="_blank">
+                <span><span data-icon="&#xe02b;" class="icon"></span>Source code</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <nav>
+          <ul>
+            <li class="button button-pill">
+              <a href="https://github.com/rabix/composer/releases/download/1.0.1/rabix-composer-1.0.1.dmg">
+                <span><span data-icon="&#xe04d;" class="icon"></span>Mac</span>
+              </a>
+            </li>
+            <li class="button button-pill">
+              <a href="https://github.com/rabix/composer/releases/download/1.0.1/rabix-composer-1.0.1-x86_64.AppImage">
+                <span><span data-icon="&#xe04d;" class="icon"></span>Linux</span>
+              </a>
+            </li>
+            <li class="button button-pill">
+              <a href="https://github.com/rabix/composer/releases/download/1.0.1/rabix-composer.Setup.1.0.1.exe">
+                <span><span data-icon="&#xe04d;" class="icon"></span>Windows</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+      </section>
+      <section>
+        <h2>Rabix Executor: Runner for CWL pipelines [Legacy]</h2>
         <p>
           Rabix Executor is a workflow runner that can execute
           CWL sbg:draft2 and CWL 1.0 pipelines. It has support for the
@@ -335,7 +384,7 @@
     </section>
 
     <hr>
-    
+
     <section id="faq" class="section-a">
       <h1>With love from Seven Bridges</h1>
 
